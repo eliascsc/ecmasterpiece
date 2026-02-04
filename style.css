@@ -1,0 +1,82 @@
+:root {
+  --bg: #0e0e0e;
+  --text: #eaeaea;
+  --muted: #9a9a9a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Topo */
+.topbar {
+  padding: 20px 40px;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* Galeria */
+.gallery {
+  column-count: 3;
+  column-gap: 20px;
+  padding: 40px;
+}
+
+.gallery img {
+  width: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.gallery img:hover {
+  opacity: 0.85;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    column-count: 1;
+    padding: 20px;
+  }
+}
+
+/* Rodapé */
+.footer {
+  padding: 30px;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.footer a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--text);
+}
+
+.footer span {
+  margin: 0 8px;
+  color: var(--muted);
+}

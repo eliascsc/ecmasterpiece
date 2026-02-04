@@ -1,0 +1,1 @@
+// Futuramente aqui entra o lightbox (foto em tela cheia)
